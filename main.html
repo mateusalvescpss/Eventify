@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify App</title>
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para cabeçalho */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Estilos específicos para cada seção */
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        /* Estilos para botões */
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para notificações */
+        .notification {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .notification h2 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        .notification p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eventify App</h1>
+    </header>
+    <div class="container">
+        <!-- Painel do Organizador -->
+        <section class="panel">
+            <h2>Painel do Organizador</h2>
+            <p>Eventos Criados: 5</p>
+            <p>Participantes Inscritos: 120</p>
+            <button class="btn">Criar Novo Evento</button>
+        </section>
+
+        <!-- Criar Evento -->
+        <section class="create-event">
+            <h2>Criar Evento</h2>
+            <form>
+                <label for="eventName">Nome do Evento:</label><br>
+                <input type="text" id="eventName" name="eventName"><br>
+                <!-- Adicionar mais campos do formulário -->
+                <button class="btn" type="submit">Criar Evento</button>
+            </form>
+        </section>
+
+        <!-- Gerenciar Inscrições -->
+        <section class="manage-registration">
+            <h2>Gerenciar Inscrições</h2>
+            <ul>
+                <li>Inscrição 1 - Confirmado</li>
+                <li>Inscrição 2 - Pendente</li>
+                <li>Inscrição 3 - Cancelado</li>
+                <!-- Adicionar mais inscrições -->
+            </ul>
+        </section>
+
+        <!-- Painel do Participante -->
+        <section class="participant-panel">
+            <h2>Painel do Participante</h2>
+            <p>Eventos Disponíveis: 10</p>
+            <p>Eventos Inscritos: 3</p>
+        </section>
+
+        <!-- Descobrir Eventos -->
+        <section class="discover-events">
+            <h2>Descobrir Eventos</h2>
+            <p>Filtrar por:</p>
+            <select>
+                <option value="category">Categoria</option>
+                <option value="location">Localização</option>
+                <option value="date">Data</option>
+            </select>
+            <button class="btn">Buscar</button>
+            <ul>
+                <li>Evento 1</li>
+                <li>Evento 2</li>
+                <li>Evento 3</li>
+                <!-- Adicionar mais eventos -->
+            </ul>
+        </section>
+
+        <!-- Visualizar Detalhes do Evento -->
+        <section class="event-details">
+            <h2>Detalhes do Evento</h2>
+            <p>Nome do Evento: Evento 1</p>
+            <p>Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Data: 01/01/2024</p>
+            <p>Horário: 09:00 - 17:00</p>
+            <!-- Adicionar mais detalhes -->
+            <button class="btn">Inscrever-se</button>
+        </section>
+
+        <!-- Notificações -->
+        <section class="notifications">
+            <h2>Notificações</h2>
+            <!-- Exemplo de notificação 1 -->
+            <div class="notification">
+                <h2>Notificação 1</h2>
+                <p>Esta é uma notificação de exemplo. Você pode personalizá-la conforme necessário.</p>
+            </div>
+
+            <!-- Exemplo de notificação 2 -->
+            <div class="notification">
+                <h2>Notificação 2</h2>
+                <p>Outra notificação de exemplo. Você pode adicionar mais detalhes ou ações aqui.</p>
+            </div>
+
+            <!-- Exemplo de notificação 3 -->
+            <div class="notification">
+                <h2>Notificação 3</h2>
+                <p>Mais uma notificação para ilustrar o conceito. Fique à vontade para estilizá-la conforme desejado.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
